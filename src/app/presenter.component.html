@@ -1,0 +1,15 @@
+<h2>My Message</h2>
+<table class="table messages">
+  <thead>
+    <tr>
+      <th>Message</th>
+      <th>Expiration Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let message of messages">
+      <td><img  [src]="message.message" class="img-thumbnail"></td>
+      <td>{{message.expiration_date}}</td>
+    </tr>
+  </tbody>
+</table>
